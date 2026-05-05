@@ -1,4 +1,6 @@
 // Search page specific code
+import { omdbApiKey, watchlistItems, loadWatchlist, addToWatchlist } from './common.js';
+
 const searchInput = document.getElementById("searchInput");
 const searchBtn = document.getElementById("search-btn");
 const resultsList = document.getElementById("resultsList");

@@ -1,4 +1,6 @@
 // Watchlist page specific code
+import { watchlistItems, loadWatchlist } from './common.js';
+
 function displayWatchlist() {
   const watchlistItemsList = document.querySelector('#watchlistItems');
   const emptyWatchlist = document.querySelector('#emptyWatchlist');
