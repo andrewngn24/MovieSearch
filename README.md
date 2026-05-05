@@ -1,33 +1,5 @@
 # MovieSearch - My First Full Stack Project
 
-## Getting Started
-
-To run this app locally:
-
-1. **Clone the repository:**
-   ```
-   git clone https://github.com/yourusername/moviesearch.git
-   cd moviesearch
-   ```
-
-2. **Get an OMDB API key:**
-   - Sign up for a free API key at [OMDB API](http://www.omdbapi.com/apikey.aspx)
-   - Create a `.env` file in the root directory
-   - Add your API key: `VITE_OMDB_API_KEY=your_api_key_here`
-
-3. **Install dependencies:**
-   ```
-   npm install
-   ```
-
-4. **Run the development server:**
-   ```
-   npm run dev
-   ```
-   Open http://localhost:5173 in your browser.
-
-For production, run `npm run build` and serve the `dist/` folder.
-
 A movie search and watchlist app I built while learning full stack web development. This project taught me a lot about APIs, state management, responsive design, and how to actually ship something that works across devices.
 
 ## What This Project Is
