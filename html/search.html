@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Your Film - IMDb</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-brand">
+                <span class="logo">MovieSearch</span>
+            </div>
+            <nav class="navbar-nav">
+                <a href="search.html" class="nav-link active">Find your film</a>
+                <a href="watchlist.html" class="nav-link">My Watchlist</a>
+            </nav>
+        </div>
+    </header>
+ 
+    <!-- Main Content -->
+    <main class="container">
+        <section class="search-section">
+            <h1 class="page-title">Find your film</h1>
+            <div class="search-container">
+                <input 
+                    type="text" 
+                    id="searchInput" 
+                    class="search-input" 
+                    placeholder="Search for a movie"
+                    autocomplete="off"
+                >
+                <button class="searchInput" id="search-btn">Search</button>
+            </div>
+
+            <!-- Results Section -->
+            <div class="results-container">
+                <div id="noResults" class="empty-state">
+                    <div class="empty-icon">🎬</div>
+                    <p>Start exploring</p>
+                </div>
+                
+                <div id="searchError" class="error-state" style="display: none;">
+                    <p>Unable to find what you're looking for.</p>
+                    <p>Please try another search.</p>
+                </div>
+ 
+                <ul id="resultsList" class="results-list">
+                    <!-- Results will be populated here by JavaScript -->
+                </ul>
+            </div>
+        </section>
+    </main>
+ 
+    <script src="../common.js"></script>
+    <script src="../search.js"></script>
+</body>
+</html>
