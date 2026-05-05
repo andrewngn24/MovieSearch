@@ -7,6 +7,15 @@ const resultsList = document.getElementById("resultsList");
 const noResults = document.getElementById("noResults");
 const searchError = document.getElementById("searchError");
 
+// Debounce utility to prevent rapid API requests
+function debounce(func, delay) {
+  let timeoutId;
+  return function (...args) {
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(() => func.apply(this, args), delay);
+  };
+}
+
 async function searchMovie(movieName) {
   try {
     const url = `https://www.omdbapi.com/?apikey=${omdbApiKey}&s=${movieName}`;
@@ -76,10 +85,13 @@ function displaySearch(movies) {
   resultsList.innerHTML = moviesHtml;
 }
 
+// Create debounced version of handleSearch (500ms delay)
+const debouncedSearch = debounce(handleSearch, 500);
+
 // Event listeners
-searchBtn.addEventListener("click", handleSearch);
+searchBtn.addEventListener("click", debouncedSearch);
 searchInput.addEventListener('keypress', (e) => {
-  if (e.key === 'Enter') handleSearch();
+  if (e.key === 'Enter') debouncedSearch();
 });
 
 document.addEventListener('click', (e) => {
