@@ -6,7 +6,7 @@ export default defineConfig({
     outDir: 'dist',
     rollupOptions: {
       input: {
-        search: resolve(__dirname, 'html/search.html'),
+        index: resolve(__dirname, 'html/index.html'),
         watchlist: resolve(__dirname, 'html/watchlist.html')
       }
     }
