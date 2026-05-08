@@ -1,6 +1,7 @@
 {
   "name": "moviesearch",
   "version": "1.0.0",
+  "type": "module",
   "description": "A movie search and watchlist app",
   "main": "main.js",
   "scripts": {
