@@ -1,6 +1,6 @@
 # MovieSearch - My First Full Stack Project
 
-**[Try the live app →](https://moviesearch-beta.netlify.app/)**
+**[Try the live app →](https://movie-search-one-zeta.vercel.app/)**
 
 A movie search and watchlist app I built while learning full stack web development. This project taught me a lot about APIs, state management, responsive design, and how to actually ship something that works across devices.
 
