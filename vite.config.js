@@ -4,7 +4,7 @@ import { resolve } from 'path';
 export default defineConfig({
   root: 'html',
   build: {
-    outDir: '../docs',
+    outDir: '../dist',
     emptyOutDir: true,
     rollupOptions: {
       input: {
